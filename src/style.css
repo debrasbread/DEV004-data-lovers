@@ -1,9 +1,9 @@
 body {
-background-color: beige;
+background-color: white;
 }
 .flex-container{
     border: 1px solid black;
-    background: #ccc;
+    background: white;
     padding: 20px;
     display: flex;
    /* flex-flow: row;
@@ -26,11 +26,13 @@ background-color: beige;
     width:250px;
     height: 400px;
 }
-/* .caja{
-    border: 1px solid rgb(70,69,69);
-    background-color: white;
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    width: 120px;
-} */
+
+.flex-banner {
+
+        background: url('https://i.imgur.com/J9aNcE6.jpg') top left/cover no-repeat;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+}
