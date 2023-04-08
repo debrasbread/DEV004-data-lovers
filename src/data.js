@@ -82,7 +82,7 @@ export const filtrarProductor = (peliculas, productor) => {
 };
 
 //se pasa abajo por ser una funcion flecha, asi se llaman las funciones y estas ya se encuentran inicializadas. (investigar hoisting)
-const botonesPelis = {
+const dataMovies = {
   peliculasPorTituloAZ,
   peliculasPorTituloZA,
   peliculasAscendente,
@@ -91,5 +91,5 @@ const botonesPelis = {
   filtrarProductor,
 };
 
-export default botonesPelis;
+export default dataMovies;
 

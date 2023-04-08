@@ -3,82 +3,72 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1" />
-    <title>Data Lovers</title>
+    <title>Guía básica Ghibli</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+   
+    </div>
     <div class="header">
       <div>
         <img
           src="https://upload.wikimedia.org/wikipedia/sco/thumb/c/ca/Studio_Ghibli_logo.svg/1200px-Studio_Ghibli_logo.svg.png"
           class="ghibliLogo"
+          alt="Studio Ghibli logo"
         />
+        <h1>Ghibli for Beginners: Films</h1>
       </div>
     </div>
-<!-- select para ir al inicio (es como un F5)-->
-<section class="dropdown">
-  <select class="select" onchange="location.reload()">
-    <option value="Home">Home</option>
-  </select>
-</section>
 
-<!-- Ordenar -->
-<section class="dropdown">
-  <div class="select">
-    <span class="selected">Ordenar&nbsp;</span>
-    <div class="caret"></div>
-  </div>
-  <ul class="menu">
-    <li><option>Más antigua a más reciente</option></li>
-    <li><option>Más reciente a más antigua</option></li>
-    <li><option id="ordenarAZ">A a Z</option></li>
-    <li><option id="ordenarZA">Z a A</option></li>
-  </ul>
-</section>
+  
+<!-- Contenedor de los menús -->
+<div class="contenedor-menu">
 
-<!-- Filtrar por Director -->
-<section class="dropdown" id="directorDropdown">
-  <div class="select">
-    <span class="selected">Buscar por director&nbsp;</span>
-    <div class="caret"></div>
-  </div>
-  <ul class="menu">
-    <li><option>Hayao Miyazaki</option></li>
-    <li><option>Isao Takahata</option></li>
-    <li><option>Yoshifumi Kondō</option></li>
-    <li><option>Hiroyuki Morita</option></li>
-    <li><option>Gorō Miyazaki</option></li>
-    <li><option>Hiromasa Yonebayashi</option></li>
-  </ul>
-</section>
+    <!-- Recargar página -->
+    
+    <button onclick="location.reload()" class="reload-button">Home</button>
 
-<!-- Filtrar por productor -->
-<section class="dropdown" id="productoresDropdown">
-  <div class="select">
-    <span class="selected">Buscar por productor&nbsp;</span>
-    <div class="caret"></div>
-  </div>
-  <ul class="menu">
-    <li><option>Isao Takahata</option></li>
-    <li><option>Hayao Miyazaki</option></li>
-    <li><option>Toru Hara</option></li>
-    <li><option>Toshio Suzuki</option></li>
-    <li><option>Yoshiaki Nishimura</option></li>
-  </ul>
-</section>
+    <!-- Ordenar películas -->
 
-<h1>Producciones</h1> 
+    <label for="menuOrdenar"></label>
+    <select name="menuOrdenar" id="menuOrdenar">
+      <option value="">Sort movies</option>
+      <option value="opcion1">Oldest to newest</option>
+      <option value="opcion2">newest to oldest</option>
+      <option value="opcion3">A to Z</option>
+      <option value="opcion4">Z to A</option>
+    </select>
 
-<!-- el select de ordenar -->
-<section id="drop" class="flex-boton"></section>
+    <!-- Filtrar películas por director -->
+    <label for="menuDirector"></label>
+    <select name="menuDirector" id="menuDirector">
+      <option value=""> Filter by director</option>
+      <option value="opcion1">Hayao Miyazaki</option>
+      <option value="opcion2">Isao Takahata</option>
+      <option value="opcion3">Yoshifumi Kondō</option>
+      <option value="opcion4">Hiroyuki Morita</option>
+      <option value="opcion5">Gorō Miyazaki</option>
+      <option value="opcion6">Hiromasa Yonebayashi</option>
+    </select>
 
-<section id="contenedor-peliculas" class="flex-title"></section>
+    <!-- Filtrar películas por productor -->
+    <label for="menuProductor"></label>
+    <select name="menuProductor" id="menuProductor">
+      <option value="">Filter by producer</option>
+      <option value="opcion1">Isao Takahata</option>
+      <option value="opcion2">Hayao Miyazaki</option>
+      <option value="opcion3">Toru Hara</option>
+      <option value="opcion4">Toshio Suzuki</option>
+      <option value="opcion5">Yoshiaki Nishimura</option>
+    </select>
 
-<script src="main.js" type="module"></script>
+</div>
+
+    <section id="contenedor-peliculas" class="flex-title"></section>
 
 
 
+    <script src="main.js" type="module"></script>
   </body>
 </html>
-
