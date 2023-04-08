@@ -8,21 +8,10 @@
 body {
   margin: 0;
   background: #ffffe0;
-  background-image: url("Ghibli-BG.jpeg"); /* Asegúrate de que la imagen tenga transparencia */
+  background-image: url("Ghibli-BG-white.jpeg");
   background-size: cover;
+  background-attachment: fixed;
 }
-
-
-
-
-
-  
-
-
-
-
-
-
 
 #contenedor-peliculas {
   display: grid;
@@ -39,7 +28,7 @@ body {
   height: 210px;
   flex-grow: 4;
 
-  border: 8px solid #d3d3d3;
+  border: 1px solid #929292;
 }
 
 .titulosPelis {
@@ -65,28 +54,52 @@ body {
 }
 
 .ghibliLogo {
-  width: 350px;
-  padding-top: 40px;
-  padding-left: 40px;
+  width: 300px;
+  padding-top: 20px;
+  padding-left: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ghibliLogo img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .ghibliLogo img {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ghibliLogo img {
+    max-width: 60%;
+  }
 }
 
 h1 {
   text-align: center;
-  font-size: larger;
+  font-size: medium;
   font-weight: bold;
 }
 
 .grid-item {
   text-align: center;
   position: relative;
-  /*cambie a -1 para que quedara al frente el boton pero me oculta la cortinita*/
   z-index: 1;
 }
-/* .grid-item img:hover { cambie de lugar el  hover y ya funciona la cortinita*/
+
 .grid-item:hover img {
-  opacity: 0.2;
+  opacity: .2;
+  background-color: #ffffff;
   pointer-events: auto;
 }
+
+
+
 
 footer {
   text-align: center;
@@ -140,20 +153,17 @@ footer {
   
  } */
 
-
-
-
-
 select {
   font-size: 16px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   background-color: #fff;
   color: #555;
   appearance: none;
   outline: none;
   cursor: pointer;
+
   /* flechita */
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='6'%3E%3Cpath d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
@@ -180,41 +190,62 @@ select:disabled {
 }
 
 #menuOrdenar {
-    width: 250px;
-    padding-right: 40px;
-  }
-  #menuDirector {
-    width: 250px;
-    padding-right: 40px;
-  }
+  width: 250px;
+  padding-right: 40px;
+  margin-left: 30px;
+}
+#menuDirector {
+  width: 250px;
+  padding-right: 40px;
+  margin-left: 30px;
+}
 #menuProductor {
-    width: 250px;
-    padding-right: 40px;
-  }
-  
-  .reload-button {
-    background-color: #add8e6; /* Color de fondo */
-    border: none; /* Sin borde */
-    color: white; /* Color de texto */
-    padding: 10px 20px; /* Añade un poco de relleno */
-    text-align: center; /* Centra el texto */
-    text-decoration: none; /* Quita el subrayado */
-    display: inline-block; /* Muestra el botón como un elemento en línea */
-    font-size: 16px; /* Tamaño de letra */
-    margin: 4px 2px; /* Agrega un poco de margen */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
-    border-radius: 4px; /* Agrega bordes redondeados */
-  }
-  
- /* Estilos para los menús */
-label, select {
-    display: inline-block;
-  }
-  
-  /* Estilos para el contenedor de los menús */
-  .contenedor-menu {
-    text-align: center;
-  }
+  width: 250px;
+  padding-right: 40px;
+  margin-left: 30px;
+}
 
-  
-  
+.reload-button {
+  background-color: #5fbddc; /* Color de fondo */
+  border: none; /* Sin borde */
+  color: white; /* Color de texto */
+  padding: 5px 20px; /* Añade un poco de relleno */
+  text-align: center; /* Centra el texto */
+  text-decoration: none; /* Quita el subrayado */
+  display: inline-block; /* Muestra el botón como un elemento en línea */
+  font-size: 16px; /* Tamaño de letra */
+  margin-left: 30px;
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  border-radius: 4px; /* Agrega bordes redondeados */
+}
+
+/* Estilos para el contenedor de los menús */
+.contenedor-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Estilos para los menús */
+select {
+  margin-left: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 767px) {
+  /* Cambiamos el flex-direction a column */
+  .contenedor-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* Añadimos un margen superior a los menús */
+  select {
+    margin-top: 10px;
+  }
+}

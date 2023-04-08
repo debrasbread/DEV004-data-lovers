@@ -33,7 +33,7 @@ describe("peliculasPorTituloZA", () => {
     ]);
   });
 }); // Test ordenar por año, descendente
-describe("Ordenar pelîculas de manera Ascendente", () => {
+describe("Ordenar películas de manera Ascendente", () => {
   const datos = [
     { release_date: "1992" },
     { release_date: "1991" },
@@ -50,7 +50,7 @@ describe("Ordenar pelîculas de manera Ascendente", () => {
     ]);
   });
 }); // Test ordenar por año, descendente
-describe("Ordenar pelîculas de manera Descendente", () => {
+describe("Ordenar películas de manera Descendente", () => {
   const datos = [
     { release_date: "1992" },
     { release_date: "1991" },
@@ -115,4 +115,3 @@ import {
   filtrarDirectores,
   filtrarProductor,
 } from "../src/data.js";
-
