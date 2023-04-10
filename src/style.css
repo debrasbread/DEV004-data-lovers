@@ -9,7 +9,7 @@
 body {
   background: url("Ghibli-BG-white.jpeg") no-repeat center center fixed;
   background-size: cover;
-  margin-bottom: 100px;
+  background-attachment: fixed;
 }
 
 #contenedor-peliculas {
@@ -183,17 +183,17 @@ select:disabled {
 }
 
 #menuOrdenar {
-  width: 250px;
+  width: 180px;
   padding-right: 40px;
   margin-left: 30px;
 }
 #menuDirector {
-  width: 250px;
+  width: 180px;
   padding-right: 40px;
   margin-left: 30px;
 }
 #menuProductor {
-  width: 250px;
+  width: 180px;
   padding-right: 40px;
   margin-left: 30px;
 }
@@ -427,18 +427,33 @@ select:disabled {
 
 #menuOrdenar {
   width: 250px;
-  padding-right: 40px;
-  margin-left: 30px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: small;
 }
 #menuDirector {
   width: 250px;
-  padding-right: 40px;
-  margin-left: 30px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: small;
 }
 #menuProductor {
   width: 250px;
-  padding-right: 40px;
-  margin-left: 30px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: small;
 }
 
 .reload-button {
@@ -452,6 +467,8 @@ select:disabled {
   font-family: "Montserrat";
   font-size: medium; /* Tamaño de letra */
   margin-left: 30px;
+  margin-top: 30px;
+
   cursor: pointer; /* Cambia el cursor al pasar el mouse */
   border-radius: 4px; /* Agrega bordes redondeados */
 }
