@@ -92,4 +92,3 @@ const dataMovies = {
 };
 
 export default dataMovies;
-

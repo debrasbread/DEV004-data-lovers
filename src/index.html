@@ -5,11 +5,10 @@
     <meta name="viewport" content="initial-scale=1" />
     <title>Ghibli for Beginners</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
   </head>
 
   <body>
-   
-   
     <div class="header">
       <div>
         <img
@@ -21,54 +20,55 @@
       </div>
     </div>
 
-  
-<!-- Contenedor de los menús -->
-<div class="contenedor-menu">
+    <!-- Contenedor de los menús -->
+    <div class="contenedor-menu">
+      <!-- Recargar página -->
 
-    <!-- Recargar página -->
-    
-    <button onclick="location.reload()" class="reload-button">Home</button>
+      <button onclick="location.reload()" class="reload-button">Home</button>
 
-    <!-- Ordenar películas -->
+      <!-- Ordenar películas -->
 
-    <label for="menuOrdenar"></label>
-    <select name="menuOrdenar" id="menuOrdenar">
-      <option value="">Sort movies</option>
-      <option value="opcion1">Oldest to newest</option>
-      <option value="opcion2">Newest to oldest</option>
-      <option value="opcion3">A to Z</option>
-      <option value="opcion4">Z to A</option>
-    </select>
+      <label for="menuOrdenar"></label>
+      <select name="menuOrdenar" id="menuOrdenar">
+        <option value="" disabled selected>Sort movies</option>
+        <option value="opcion1">Oldest to newest</option>
+        <option value="opcion2">Newest to oldest</option>
+        <option value="opcion3">A to Z</option>
+        <option value="opcion4">Z to A</option>
+      </select>
 
-    <!-- Filtrar películas por director -->
-    <label for="menuDirector"></label>
-    <select name="menuDirector" id="menuDirector">
-      <option value=""> Filter by director</option>
-      <option value="opcion1">Hayao Miyazaki</option>
-      <option value="opcion2">Isao Takahata</option>
-      <option value="opcion3">Yoshifumi Kondō</option>
-      <option value="opcion4">Hiroyuki Morita</option>
-      <option value="opcion5">Gorō Miyazaki</option>
-      <option value="opcion6">Hiromasa Yonebayashi</option>
-    </select>
+      <!-- Filtrar películas por director -->
+      <label for="menuDirector"></label>
+      <select name="menuDirector" id="menuDirector">
+        <option value="" disabled selected>Filter by director</option>
+        <option value="opcion1">Hayao Miyazaki</option>
+        <option value="opcion2">Isao Takahata</option>
+        <option value="opcion3">Yoshifumi Kondō</option>
+        <option value="opcion4">Hiroyuki Morita</option>
+        <option value="opcion5">Gorō Miyazaki</option>
+        <option value="opcion6">Hiromasa Yonebayashi</option>
+      </select>
 
-    <!-- Filtrar películas por productor -->
-    <label for="menuProductor"></label>
-    <select name="menuProductor" id="menuProductor">
-      <option value="">Filter by producer</option>
-      <option value="opcion1">Isao Takahata</option>
-      <option value="opcion2">Hayao Miyazaki</option>
-      <option value="opcion3">Toru Hara</option>
-      <option value="opcion4">Toshio Suzuki</option>
-      <option value="opcion5">Yoshiaki Nishimura</option>
-    </select>
-
-</div>
+      <!-- Filtrar películas por productor -->
+      <label for="menuProductor"></label>
+      <select name="menuProductor" id="menuProductor">
+        <option value="" disabled selected>Filter by producer</option>
+        <option value="opcion1">Isao Takahata</option>
+        <option value="opcion2">Hayao Miyazaki</option>
+        <option value="opcion3">Toru Hara</option>
+        <option value="opcion4">Toshio Suzuki</option>
+        <option value="opcion5">Yoshiaki Nishimura</option>
+      </select>
+    </div>
 
     <section id="contenedor-peliculas" class="flex-title"></section>
 
-
-
     <script src="main.js" type="module"></script>
+
+    <footer>
+      <div class="footer">
+        <p>D&F Laboratorians, 2023</p>
+      </div>
+    </footer>
   </body>
 </html>
