@@ -61,21 +61,72 @@ menuOrdenar.addEventListener("change", (event) => {
   renderPeliculas(peliculasOrdenadas);
 });
 
-// Asignar eventos de click a las opciones de filtrado por director
-const directorDropdown = document.querySelector("#menuDirector");
-const directorOptions = directorDropdown.querySelectorAll("li");
-directorOptions.forEach((option) => {
-  option.addEventListener("click", () => {
-    const selectedDirector = option.innerText;
-    const peliculasFiltradas = dataMovies.filtrarDirectores(
-      peliculas,
-      selectedDirector
-    );
 
-    // Renderizar las películas filtradas
-    renderPeliculas(peliculasFiltradas);
-  });
+const menuDirector = document.getElementById("menuDirector");
+menuDirector.addEventListener("change", (event) => {
+  const seleccion = event.target.value;
+
+  let peliculasFiltradas;
+
+  switch (seleccion) {
+  case "opcion1":
+    peliculasFiltradas = peliculas.filter((pelicula) => pelicula.director === "Hayao Miyazaki");
+    break;
+  case "opcion2":
+    peliculasFiltradas = peliculas.filter((pelicula) => pelicula.director === "Isao Takahata");
+    break;
+  case "opcion3":
+    peliculasFiltradas = peliculas.filter((pelicula) => pelicula.director === "Yoshifumi Kondō");
+    break;
+  case "opcion4":
+    peliculasFiltradas = peliculas.filter((pelicula) => pelicula.director === "Hiroyuki Morita");
+    break;
+  case "opcion5":
+    peliculasFiltradas = peliculas.filter((pelicula) => pelicula.director === "Gorō Miyazaki");
+    break;
+  case "opcion6":
+    peliculasFiltradas = peliculas.filter((pelicula) => pelicula.director === "Hiromasa Yonebayashi");
+    break;
+  default:
+    peliculasFiltradas = peliculas;
+    break;
+  }
+
+  renderPeliculas(peliculasFiltradas);
 });
+
+
+const menuProductor = document.getElementById("menuProductor");
+menuProductor.addEventListener("change", (event) => {
+  const seleccion = event.target.value;
+
+  let peliculasFiltradas;
+
+  switch (seleccion) {
+  case "opcion1":
+    peliculasFiltradas = peliculas.filter((pelicula) => pelicula.producer === "Isao Takahata");
+    break;
+  case "opcion2":
+    peliculasFiltradas = peliculas.filter((pelicula) => pelicula.producer === "Hayao Miyazaki");
+    break;
+  case "opcion3":
+    peliculasFiltradas = peliculas.filter((pelicula) => pelicula.producer === "Toru Hara");
+    break;
+  case "opcion4":
+    peliculasFiltradas = peliculas.filter((pelicula) => pelicula.producer === "Toshio Suzuki");
+    break;
+  case "opcion5":
+    peliculasFiltradas = peliculas.filter((pelicula) => pelicula.producer === "Yoshiaki Nishimura");
+    break;
+  default:
+    peliculasFiltradas = peliculas;
+    break;
+  }
+
+  renderPeliculas(peliculasFiltradas);
+});
+
+
 
 // Resetear los menús
 function resetMenus() {
