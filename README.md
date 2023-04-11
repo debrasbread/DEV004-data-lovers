@@ -4,16 +4,19 @@ _Ghibli for Beginners_ ofrece información básica acerca de las producciones de
 
 ![Ghibli for Beginners, versión actual para escritorio.](ghibli-version-actual.png)<br>
 _Versión actual para escritorio._
+<br>
+<br>
 
 ## Prototipo
 
 Realizamos un prototipo que sirvió de guía conforme desarrollábamos la página; en él basamos la mayor parte de la primera versión de la página. 
 
 ![Prototipo](prototipo-ghibli.png)<br>
-_Prototipo realizado en Figma para la versión de escritorio._
+_Prototipo realizado en Figma para la versión de escritorio._<br>
 <br>
 ![Primera versión para escritorio](ghibli-primera-version.png)<br>
 _Primera versión para escritorio._
+<br>
 <br>
 
 Para organizar la información que los usuarios desean encontrar dividimos sus requerimientos en historias de usuario (HU) o solicitudes breves que se traducen en las siguientes funcionalidades.
@@ -145,6 +148,7 @@ Para combrobar que las funciones más relevantes (ordenar y filtrar la data) se 
 
 ![Pruebas unitarias](pruebas-unitarias.png)<br>
 _Pruebas unitarias._
+<br>
 <br>
 Como se aprecia en la imagen, las seis funciones pasaron las pruebas. Además éstas tienen una cobertura del 100% para sentencias (_statements_), 75% para ramas (_branch_), 100% para funciones (_functions_), y 100% para líneas (_lines_) en el archivo src/data.js.
 
