@@ -67,7 +67,7 @@ export function peliculasDescendente(peliculas) {
 // Función Directores
 
 // Filtrar las películas por director
-export function filtrarDirectores(peliculas, selectedDirector) {
+export function filtrarDirector(peliculas, selectedDirector) {
   return peliculas.filter((pelicula) => {
     return pelicula.director === selectedDirector;
   });
@@ -87,7 +87,7 @@ const dataMovies = {
   peliculasPorTituloZA,
   peliculasAscendente,
   peliculasDescendente,
-  filtrarDirectores,
+  filtrarDirector,
   filtrarProductor,
 };
 

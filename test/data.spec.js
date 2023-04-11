@@ -32,8 +32,8 @@ describe("peliculasPorTituloZA", () => {
       { title: "Castle in the Sky" },
     ]);
   });
-}); // Test ordenar por año, descendente
-describe("Ordenar películas de manera Ascendente", () => {
+}); // Test ordenar por año, ascendente
+describe("Ordena las películas por año de manera ascendente", () => {
   const datos = [
     { release_date: "1992" },
     { release_date: "1991" },
@@ -41,7 +41,7 @@ describe("Ordenar películas de manera Ascendente", () => {
     { release_date: "1988" },
   ];
   const ordenarDeAntiguaANueva = peliculasAscendente(datos);
-  it("los años desde la mas antigua a la mas nueva", () => {
+  it("ordena de la más antigua a la más nueva", () => {
     expect(ordenarDeAntiguaANueva).toEqual([
       { release_date: "1986" },
       { release_date: "1988" },
@@ -50,7 +50,7 @@ describe("Ordenar películas de manera Ascendente", () => {
     ]);
   });
 }); // Test ordenar por año, descendente
-describe("Ordenar películas de manera Descendente", () => {
+describe("Ordena las películas por año de manera descendente", () => {
   const datos = [
     { release_date: "1992" },
     { release_date: "1991" },
@@ -58,7 +58,7 @@ describe("Ordenar películas de manera Descendente", () => {
     { release_date: "1988" },
   ];
   const ordenarDeNuevaAAntigua = peliculasDescendente(datos);
-  it("los años desde el mas nuevo al mas antiguo", () => {
+  it("ordena de la más nueva a la más antigua", () => {
     expect(ordenarDeNuevaAAntigua).toEqual([
       { release_date: "1992" },
       { release_date: "1991" },
@@ -67,7 +67,7 @@ describe("Ordenar películas de manera Descendente", () => {
     ]);
   });
 }); // Test filtrar por director
-describe("filtrarDirectores", () => {
+describe("filtrarDirector", () => {
   it("debe devolver las películas del director seleccionado", () => {
     const peliculas = [
       { title: "Castle in the Sky", director: "Hayao Miyazaki" },
@@ -76,7 +76,7 @@ describe("filtrarDirectores", () => {
       { title: "Grave of the Fireflies", director: "Isao Takahata" },
     ];
     const directorSeleccionado = "Hayao Miyazaki";
-    const peliculasFiltradas = filtrarDirectores(
+    const peliculasFiltradas = filtrarDirector(
       peliculas,
       directorSeleccionado
     );
@@ -112,6 +112,6 @@ import {
   peliculasPorTituloZA,
   peliculasAscendente,
   peliculasDescendente,
-  filtrarDirectores,
+  filtrarDirector,
   filtrarProductor,
 } from "../src/data.js";

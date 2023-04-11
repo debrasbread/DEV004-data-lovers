@@ -1,26 +1,27 @@
 **Data Lovers - Studio Ghibli**
-<p>por Debra Figueroa y Fernanda Acuña</p>
 
-Nuestra página web ofrece información básica y concisa acerca de las producciones de Studio Ghibli; es útil como primera aproximación para personas que no conocen sus películas o que han visto sólo algunas y desean saber qué otras existen, así como datos (año de estreno, director, productor) que son punto de partida para indagaciones más amplias.
+_Ghibli for Beginners_ ofrece información básica acerca de las producciones de Studio Ghibli; es útil como primera aproximación para personas que no conocen sus películas o que han visto sólo algunas y desean saber qué otras existen, así como datos (año de estreno, director o productor) que son punto de partida para indagaciones más amplias. Permite al usuario ordenar y filtrar información de películas (manipulación y renderizado de datos en tiempo real) en una misma página a través de menús desplegables. Su diseño es responsivo, por lo que funciona bien tanto en una computadora como en una tableta o un teléfono celular.
 
-## Prototipos
+![Ghibli for Beginners, versión actual para escritorio.](ghibli-version-actual.png)
 
-Realizamos dos prototipos que nos sirvieron de guía conforme desarrollábamos la página: uno de baja fidelidad y uno de alta.
+![Ghibli for Beginners, versión actual para teléfono.](version-actual-telefono-1.jpeg)
 
-- Prototipo de baja fidelidad
+(version-actual-telefono-2.jpeg)
 
-![Prototipo de baja fidelidad](prototipo-baja.jpg)
+## Prototipo
 
-_Este prototipo fue realizado en paint._
+Realizamos un prototipo que sirvió de guía conforme desarrollábamos la página; en él basamos la mayor parte de la primera versión de la página. 
 
-- Prototipo de alta fidelidad
+![Prototipo](prototipo-ghibli.png)
 
-![Prototipo de alta fidelidad](prototipo-alta.jpg)
+![Primera versión para escritorio](ghibli-primera-version.png)
 
-_Este protipo fue realizado en figma._
+![Primera versión para teléfono](primera-version-telefono-1.jpeg)
+
+(primera-version-telefono-2.jpeg)
 
 
-Como se aprecia en los prototipos, para organizar la información que los usuarios desean encontrar dividimos sus requerimientos en historias de usuario (HU) o solicitudes breves que se traducen en las siguientes funcionalidades. Algunas de ellas las añadimos conforme fuimos avanzando.
+Para organizar la información que los usuarios desean encontrar dividimos sus requerimientos en historias de usuario (HU) o solicitudes breves que se traducen en las siguientes funcionalidades.
 
 1. Visualizar las películas.
 2. Ordenar las películas de la A a la Z y de la Z a la A.
@@ -149,5 +150,5 @@ Para combrobar que las funciones más relevantes (ordenar y filtrar la data) se 
 
 ![Pruebas unitarias](pruebas-unitarias.png)
 
-Como se aprecia en la imagen, las seis funciones pasaron las pruebas. Además logramos una cobertura del 88.88% de sentencias (_statements_), 75% de ramas (_branch_), 100% de funciones (_functions_), y 88.57% de líneas (_lines_) en el archivo src/data.js.
+Como se aprecia en la imagen, las seis funciones pasaron las pruebas. Además éstas tienen una cobertura del 100% para sentencias (_statements_), 75% para ramas (_branch_), 100% para funciones (_functions_), y 100% para líneas (_lines_) en el archivo src/data.js.
 
