@@ -3,22 +3,17 @@
 _Ghibli for Beginners_ ofrece información básica acerca de las producciones de Studio Ghibli; es útil como primera aproximación para personas que no conocen sus películas o que han visto sólo algunas y desean saber qué otras existen, así como datos (año de estreno, director o productor) que son punto de partida para indagaciones más amplias. Permite al usuario ordenar y filtrar información de películas (manipulación y renderizado de datos en tiempo real) en una misma página a través de menús desplegables. Su diseño es responsivo, por lo que funciona bien tanto en una computadora como en una tableta o un teléfono celular.
 
 ![Ghibli for Beginners, versión actual para escritorio.](ghibli-version-actual.png)
-
-![Ghibli for Beginners, versión actual para teléfono.](primera-version-telefono-1.jpeg)
-
-![Ghibli for Beginners, versión actual para teléfono.](version-actual-telefono-2.jpeg)
+_Versión actual para escritorio._
 
 ## Prototipo
 
 Realizamos un prototipo que sirvió de guía conforme desarrollábamos la página; en él basamos la mayor parte de la primera versión de la página. 
 
 ![Prototipo](prototipo-ghibli.png)
+_Prototipo realizado en Figma para la versión de escritorio._
 
 ![Primera versión para escritorio](ghibli-primera-version.png)
-
-![Primera versión para teléfono](primera-version-telefono-1.jpeg)
-
-![Primera versión para teléfono](primera-version-telefono-2.jpeg)
+_Primera versión para escritorio._
 
 
 Para organizar la información que los usuarios desean encontrar dividimos sus requerimientos en historias de usuario (HU) o solicitudes breves que se traducen en las siguientes funcionalidades.
@@ -149,6 +144,7 @@ Los botones de las historias de usuario se mostrarán sobre las películas en fi
 Para combrobar que las funciones más relevantes (ordenar y filtrar la data) se comportan según lo previsto, realizamos pruebas unitarias (tests) que evalúan su desempeño y nos permiten garantizar que no haya errores en su funcionamiento. También nos dejan saber qué porcentaje del código ha sido ejecutado por ellas.
 
 ![Pruebas unitarias](pruebas-unitarias.png)
+_Pruebas unitarias._
 
 Como se aprecia en la imagen, las seis funciones pasaron las pruebas. Además éstas tienen una cobertura del 100% para sentencias (_statements_), 75% para ramas (_branch_), 100% para funciones (_functions_), y 100% para líneas (_lines_) en el archivo src/data.js.
 
